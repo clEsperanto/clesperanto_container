@@ -1,0 +1,15 @@
+name: pyclesperanto
+
+channels:
+  - conda-forge
+  - anaconda
+  
+dependencies:
+  - ocl-icd-system
+  - cupy
+  - cudatoolkit=11.0
+  - pyopencl
+  - ipykernel
+  - pip
+  - pip:
+    - pyclesperanto-prototype
