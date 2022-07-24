@@ -1,0 +1,27 @@
+{
+ "argv": [
+  "singularity",
+  "exec",
+  "--writable-tmpfs",
+  "-C",
+  "--nv",
+  "--pwd",
+  "{cwd}",
+  "-B",
+  "/home/<userhome>/.local/share/jupyter/runtime",
+  "-B",
+  "/home/<userhome>/",
+  "-B",
+  "/etc/OpenCL",
+  "-B",
+  "/projects",
+  "library://till.korten/pyclesperanto/pyclesperanto:latest",
+  "python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Py clEsperanto",
+ "language": "python"
+}
